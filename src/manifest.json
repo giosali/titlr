@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "titlr",
+    "version": "1.0.0",
+    "author": "Giovanni Salinas",
+    "description": "Displays a tooltip when the mouse hovers over an element where text overflow is replaced by an ellipsis.",
+    "icons": {
+        "16": "icons/titlr-16.png",
+        "48": "icons/titlr-48.png",
+        "128": "icons/titlr-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "<all_urls>"
+    ]
+}
